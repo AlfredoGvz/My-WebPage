@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&family=Montserrat&display=swap");
+
+:root {
+  /*
+  Defining the custom property
+  :root{
+    --varName: value
+  }
+  
+  Using the custom property
+  p{property: var(--varName)}
+
+  */
+
+  /* GENERALS FOR SIZE */
+  --size-10px: 0.625rem;
+  --size-12px: 0.75rem;
+  --size-14px: 0.875rem;
+  --size-16px: 1rem;
+  --size-18px: 1.125rem;
+  --size-20px: 1.25rem;
+  --size-24px: 1.5rem;
+  --size-32px: 2rem;
+
+  /* FONT STYLE VARIABLES */
+  /* Font family */
+  --font-family-serif: "Josefin Slab", serif;
+  --font-family-sans: "Montserrat", sans-serif;
+
+  /* ---------------------------------------------- */
+  /* COLOURS VARIABLES */
+  /* Background */
+  --colour-primary-bg: 34, 34, 59;
+  --colour-second-bg: 154, 140, 152;
+  --colour-third-bg: 242, 233, 228;
+  /* Fonts */
+  --colour-primary-font: rgb(34, 34, 59);
+  --colour-second-font: rgb(154, 140, 152);
+  --colour-third-font: rgb(242, 233, 228);
+
+  /* ----------------------------------------------- */
+  /* GRADIENTS */
+  --gradient: linear-gradient(30deg, rgb(224, 159, 62), rgb(84, 11, 14));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* ------------------------------------------------ */
+.flex {
+  display: flex;
+}
+.grid{
+  
+}
+.banner {
+  outline: 2px salmon dashed;
+  height: 40rem;
+
+  background-color: rgba(var(--colour-second-bg), 0.5);
+
+  margin-bottom: 5rem;
+}
+
+img {
+  width: 20rem;
+}
+.main-content-container {
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+}
+.overall-container {
+  justify-content: center;
+}
+
+.hobbies > * {
+  outline: 2px rebeccapurple solid;
+  margin: 1rem;
+}
+
